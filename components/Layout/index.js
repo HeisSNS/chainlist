@@ -66,6 +66,23 @@ export default function Layout({ children, lang }) {
           </div>
 
           <a
+            className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full bg-[#111827] text-white"
+            href="/bitcoin-playground"
+          >
+            <span className="text-base font-medium">Build a Bitcoin-like blockchain</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-[22px] h-[22px]"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+
+          <a
             className="flex items-center gap-2 mx-auto lg:ml-0"
             href="https://github.com/DefiLlama/chainlist"
             target="_blank"
