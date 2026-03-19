@@ -47,6 +47,23 @@ export default function Layout({ children, lang }) {
 
             <a
               className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full bg-white text-[#2F80ED] border border-[#EAEAEA]"
+              href="/build-bitcoin"
+            >
+              <span className="text-base font-medium">Build a blockchain</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-[22px] h-[22px]"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+
+            <a
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] max-w-[16.25rem] font-medium py-[17px] px-6 w-full bg-white text-[#2F80ED] border border-[#EAEAEA]"
               href="https://github.com/DefiLlama/chainlist/blob/main/constants/extraRpcs.js"
               target="_blank"
               rel="noopener noreferrer"
