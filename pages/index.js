@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 import Chain from "../components/chain";
+import BlockchainDemo from "../components/BlockchainDemo";
 import { fetcher, populateChain } from "../utils";
 
 export async function getStaticProps() {
@@ -72,6 +73,7 @@ function Home({ chains }) {
 
       <Layout>
         <React.Suspense fallback={<div className="h-screen"></div>}>
+          <BlockchainDemo />
           <div className="grid gap-5 grid-cols-1 place-content-between pb-4 sm:pb-10 sm:grid-cols-[repeat(auto-fit,_calc(50%_-_15px))] 3xl:grid-cols-[repeat(auto-fit,_calc(33%_-_20px))] isolate grid-flow-dense">
             {filteredChains.map((chain, idx) => (
               <Chain chain={chain} key={idx} lang="en" />
