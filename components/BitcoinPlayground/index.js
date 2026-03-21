@@ -101,12 +101,20 @@ export default function BitcoinPlayground() {
               </p>
             </div>
 
-            <Link
-              href="/"
-              className="inline-flex items-center justify-center rounded-[50px] border border-[#E5E7EB] bg-white px-5 py-3 font-medium text-[#2F80ED]"
-            >
-              Back to Chainlist
-            </Link>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/ethereum-playground"
+                className="inline-flex items-center justify-center rounded-[50px] border border-[#E5E7EB] bg-white px-5 py-3 font-medium text-[#111827]"
+              >
+                Compare with Ethereum
+              </Link>
+              <Link
+                href="/"
+                className="inline-flex items-center justify-center rounded-[50px] border border-[#E5E7EB] bg-white px-5 py-3 font-medium text-[#2F80ED]"
+              >
+                Back to Chainlist
+              </Link>
+            </div>
           </div>
 
           <div className="grid gap-4 lg:grid-cols-4">

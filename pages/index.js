@@ -2,6 +2,7 @@ import * as React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
+import Link from "next/link";
 import Chain from "../components/chain";
 import BlockchainDemo from "../components/BlockchainDemo";
 import { fetcher, populateChain } from "../utils";
@@ -73,6 +74,20 @@ function Home({ chains }) {
 
       <Layout>
         <React.Suspense fallback={<div className="h-screen"></div>}>
+          <div className="mb-5 flex flex-wrap gap-3">
+            <Link
+              href="/bitcoin-playground"
+              className="inline-flex items-center justify-center rounded-[999px] border border-[#E5E7EB] bg-white px-4 py-2 font-medium text-[#111827] shadow-sm"
+            >
+              Explore Bitcoin-style playground
+            </Link>
+            <Link
+              href="/ethereum-playground"
+              className="inline-flex items-center justify-center rounded-[999px] bg-[#627EEA] px-4 py-2 font-medium text-white shadow-sm"
+            >
+              Explore Ethereum-style playground
+            </Link>
+          </div>
           <BlockchainDemo />
           <div className="grid gap-5 grid-cols-1 place-content-between pb-4 sm:pb-10 sm:grid-cols-[repeat(auto-fit,_calc(50%_-_15px))] 3xl:grid-cols-[repeat(auto-fit,_calc(33%_-_20px))] isolate grid-flow-dense">
             {filteredChains.map((chain, idx) => (
